@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - LaptopHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">⚡ LaptopHub</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a></li>
+      <li><a href="shop.html"><span class="nav-icon">🛍️</span><span class="nav-text">Shop</span></a></li>
+      <li><a href="compare.html"><span class="nav-icon">⚖️</span><span class="nav-text">Compare</span></a></li>
+      <li><a href="favourites.html"><span class="nav-icon">❤️</span><span class="nav-text">Liked</span> <span class="nav-badge badge-liked" style="display:none">0</span></a></li>
+      <li><a href="cart.html"><span class="nav-icon">🛒</span><span class="nav-text">Cart</span> <span class="nav-badge badge-cart" style="display:none">0</span></a></li>
+      <li><a href="services.html"><span class="nav-icon">🔧</span><span class="nav-text">Services</span></a></li>
+      <li><a href="about.html"><span class="nav-icon">ℹ️</span><span class="nav-text">About</span></a></li>
+      <li><a href="contact.html" class="active"><span class="nav-icon">📞</span><span class="nav-text">Contact</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> <span>Contact</span></div>
+    <h1>📞 Get in Touch</h1>
+    <p>We're here to help! Reach out to us anytime.</p>
+  </div>
+
+  <div class="contact-layout">
+    <!-- Contact Form -->
+    <div class="contact-card">
+      <div style="margin-bottom:1.5rem;">
+        <h2 style="font-family:'Outfit',sans-serif;font-size:1.5rem;font-weight:700;">Send a Message</h2>
+        <p style="color:var(--text-secondary);font-size:0.88rem;margin-top:0.3rem;">We'll reply within 24 hours</p>
+      </div>
+      <form id="contact-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" name="fullName" placeholder="Rahul Sharma" required />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="rahul@example.com" required />
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" name="phone" placeholder="+91 98765 43210" />
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select name="subject" required>
+            <option value="">Select a subject</option>
+            <option>Product Inquiry</option>
+            <option>Service Booking</option>
+            <option>Order Status</option>
+            <option>Technical Support</option>
+            <option>Feedback / Suggestion</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea name="message" rows="5" placeholder="How can we help you today?" required></textarea>
+        </div>
+        <button type="submit">📩 Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h2 style="font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:1rem;">Contact Information</h2>
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <span class="contact-info-icon">📍</span>
+          <div>
+            <h4>Our Store</h4>
+            <p>42, Tech Park, Sector 18<br>Noida, Uttar Pradesh - 201301</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-icon">📞</span>
+          <div>
+            <h4>Phone Support</h4>
+            <p>+91-9876543210<br>Mon – Sat, 10AM – 7PM</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-icon">📧</span>
+          <div>
+            <h4>Email Us</h4>
+            <p>info@laptophub.in<br>support@laptophub.in</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-icon">🕐</span>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Mon – Sat: 10AM – 7PM<br>Sunday: 11AM – 4PM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Placeholder -->
+      <div style="background:var(--bg-card);border:1px solid var(--glass-border);border-radius:var(--radius);padding:2rem;text-align:center;margin-top:1.5rem;">
+        <div style="font-size:3rem;margin-bottom:0.8rem;">🗺️</div>
+        <h4 style="color:var(--text-primary);font-size:0.95rem;margin-bottom:0.4rem;">Find Us on Google Maps</h4>
+        <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:1rem;">42, Tech Park, Sector 18, Noida</p>
+        <a href="https://maps.google.com" target="_blank" class="btn btn-outline btn-sm">Open Maps →</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom" style="border-top:none;max-width:1280px;margin:0 auto;padding:1.5rem 0;">
+    <p>© 2025 LaptopHub. All rights reserved.</p>
+    <p>📧 info@laptophub.in | 📞 +91-9876543210</p>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+<script>initContactPage();</script>
+</body>
+</html>
+
+
+
+
+
+
